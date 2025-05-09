@@ -8,7 +8,7 @@ interface ChordDiagramProps {
 
 export default function ChordDiagram({ chords }: ChordDiagramProps) {
   return (
-    <div className="basis-1/3 grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
+    <div className="basis-full md:basis-1/3 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
       {chords.map((chord) => (
         <div key={chord} className="flex flex-col items-center">
           <Image
@@ -17,7 +17,7 @@ export default function ChordDiagram({ chords }: ChordDiagramProps) {
             width={60}
             height={80}
           />
-          <p className="mt-2 font-medium">{chord}</p>
+          <p className="mt-2 font-medium text-gray-800">{chord}</p>
         </div>
       ))}
     </div>
