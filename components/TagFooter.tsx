@@ -16,9 +16,9 @@ export default function TagFooter() {
           </Link>
         ))}
       </div>
-      <p className="mt-4 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} คอร์ดคีย์เพลง
-      </p>
+      <footer className="text-center text-xs text-gray-500 py-4">
+        © 2025 คอร์ดคีย์เพลง - พัฒนาเพื่อคนชอบเล่นเพลง
+      </footer>
     </footer>
   );
 }
