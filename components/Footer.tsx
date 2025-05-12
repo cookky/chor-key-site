@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-      <footer className="bg-white border-t mt-8 p-4 text-sm text-center text-gray-500">
-        © {new Date().getFullYear()} คอร์ดคีย์เพลง. สงวนลิขสิทธิ์.
+    <footer className="text-center text-xs text-gray-500 py-4">
+        © 2025 คอร์ดคีย์เพลง - พัฒนาเพื่อคนชอบเล่นเพลง
       </footer>
     );
   }
