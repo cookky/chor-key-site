@@ -1,18 +1,22 @@
-// ตัวอย่าง (layout.tsx)
+// app/layout.tsx
 import './globals.css'
-import { Prompt } from 'next/font/google'
-const prompt = Prompt({ subsets: ['thai'], weight: ['400', '600', '700'], variable: '--font-prompt' })
+import { Noto_Sans_Thai } from 'next/font/google'
+import SearchBar from '@/components/SearchBar'
 
+const noto = Noto_Sans_Thai({ subsets: ['thai'], weight: ['400', '700'] })
 
 export const metadata = {
   title: 'คอร์ดคีย์เพลง',
-  description: 'แหล่งรวมคอร์ดเพลงที่ปรับคีย์ได้',
+  description: 'รวมคอร์ดเพลงที่สามารถปรับคีย์ได้',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="th" className={prompt.variable}>
-      <body className="font-sans bg-white text-gray-800">{children}</body>
+    <html lang="th">
+      <body>
+        <SearchBar />
+        {children}
+      </body>
     </html>
   )
 }

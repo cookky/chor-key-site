@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         sans: "var(--font-sans)",
         mono: "var(--font-mono)",
+        anime: ['"Noto Sans Thai"', 'Prompt', 'Sarabun', 'sans-serif'],
       },
       colors: {
         primary: {
@@ -19,6 +20,10 @@ const config: Config = {
           DEFAULT: '#ff6600',
           dark: '#cc5200',
         },
+        peach: '#ffe6d9',
+        blossom: '#ffbfcf',
+        tea: '#edf6f9',
+        ink: '#333',
       },
     },
   },
